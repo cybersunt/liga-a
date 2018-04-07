@@ -13,27 +13,65 @@
   font-family: 'Gotham Pro Black';
   font-weight: 400;
   padding: 14px 21px;
-  box-shadow: 0 17px 46px rgba(29, 100, 166, 0.52);
-  opacity: 0.4;
+  background-color: $white;
+  margin-bottom: 21px;
+  position: relative;
 
   span {
     color: $indianred;
+  }
+
+  &::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 70px;
+    position: absolute;
+    box-shadow: 0 17px 46px rgba(29, 100, 166, 0.52);
+    opacity: 0.4;
   }
 }
 
 .main-auth__text {
   color: $grey;
+  margin-top: 0;
+  margin-bottom: 13px;
 
   &--attention {
     color: $indianred;
   }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 8px;
+  }
+}
+
+.main-auth__text--lines {
+  margin-bottom: 15px;
+
+  &::before,
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 118px;
+    height: 1px;
+    background: #000000;
+    border: solid #FFF;
+    border-width: 0px;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
 }
 
 .main-auth__btn {
-  display: block;
+  display: inline-block;
   color: $indianred;
   border-radius: 4px;
-  padding: 20px;
+  padding: 6.5px 25px;
   border: 1px solid $indianred;
   font-weight: 700;
 

@@ -1,0 +1,22 @@
+.footer-help__wrap {
+  @include wrap;
+  text-align: center;
+  margin: 0 auto;
+
+  hr {
+    margin: 0;
+    height: 2px;
+    color: $lightgrey;
+    margin-bottom: 4px;
+  }
+}
+
+.footer-help__btn {
+  display: inline-block;
+  vertical-align: center;
+  font-weight: 700;
+  color: $dodgerblue;
+  padding: 6.5px 30px;
+  border-radius: 4px;
+  border: 1px solid $dodgerblue;
+}

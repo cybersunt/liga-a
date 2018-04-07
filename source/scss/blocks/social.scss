@@ -1,10 +1,17 @@
 .social {
   @include ul-line;
+  width: 214px;
+  margin: 0 auto 12px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .social__item {
-  margin-right: 22px;
+  margin-right: 19px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -12,8 +19,8 @@
 }
 
 .social__link {
-  width: 40px;
-  height: 40px;
+  width: 39px;
+  height: 39px;
   border: 1px solid $dodgerblue;
   border-radius: 4px;
   display: inline-flex;

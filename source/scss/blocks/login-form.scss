@@ -1,9 +1,14 @@
 .login-form {
   width: 100%;
+  margin-bottom: 24px;
 }
 
 .login-form__layout {
   position: relative;
+
+  &--pswd {
+    margin-bottom: 10px;
+  }
 }
 
 .login-form__layout--pswd:before {
@@ -19,7 +24,7 @@
 .login-form__input {
   @include text(inherit, inherit);
   width: 280px;
-  height: 48.5px;
+  height: 48px;
   padding-left: 23px;
   padding-right: 23px;
   background-color: $lavender;
@@ -52,6 +57,36 @@
 
 .login-form__text {
   color: $indianred;
+  display: inline-block;
+  margin-bottom: 15px;
+  position: relative;
+
+
+  &::before {
+    content:'';
+    width: 14px;
+    height: 21px;
+    background-image: url('../img/lock.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    top: -5px;
+  }
+
+  span {
+    margin-left: 22px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid $indianred;
+  }
+
+  &:hover span,
+  &:focus span {
+    border-color: transparent;
+  }
+
+  &:active span {
+    font-weight: 700;
+  }
 }
 
 .login-form__btn {
@@ -62,7 +97,7 @@
   width: 100%;
   background: $dodgerblue;
   border-radius: 4px;
-  padding: 20px;
+  padding: 26px 20px;
   border: 0;
   transition: 0.8s;
 
