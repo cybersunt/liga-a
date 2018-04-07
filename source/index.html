@@ -28,7 +28,7 @@
   <section class="main-auth">
     <h1 class="visually-hidden">Авторизация на сайте</h1>
     <div class="main-auth__wrap">
-      <b class="main-auth__alarm">Авторизируйтесь, чтобы получить <span>кэшбэк до 26%</span></b>
+      <div class="main-auth__alarm">Авторизируйтесь, чтобы получить <span>кэшбэк до 26%</span></div>
       <div class="main-auth__social">
       <p class="main-auth__text">Выберете соц. сеть для входа</p>
       <ul class="social">
@@ -68,22 +68,27 @@
       <p class="main-auth__text main-auth__text-lines">или</p>
       <p class="main-auth__text">или используйте e-mail и пароль</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="login-input" type="email" name="login" id="login" placeholder="Ваш E-mail">
-        <label class="login-label" for="login">Ваш E-mail</label>
-        <input class="login-password" type="password" name="password" id="password" placeholder="Ваш логин">
-        <label class="login-label" for="password">Пароль</label>
-        <div class="login__text">Восстановить пароль</div>
-        <button class="login__btn" type="submit">Войти</button>
+        <div class="login-form__layout">
+          <input class="login-form__input login-form__input--mail" type="email" name="login" id="login" required>
+          <label class="login-form__label" for="login">Ваш E-mail</label>
+        </div>
+        <div class="login-form__layout login-form__layout--pswd">
+          <input class="login-form__input login-form__input--pswd" type="password" name="password" id="password" required>
+          <label class="login-form__label" for="password">Пароль</label>
+        </div>
+        <div class="login-form__text">Восстановить пароль</div>
+        <button class="login-form__btn" type="submit">Войти</button>
       </form>
       <div class="main-auth__text main-auth__text--attention">Нет аккаунта?
-        <a class="main-auth__link" href="register.html">Зарегистрироваться</a>
+        <a class="main-auth__btn" href="register.html">Зарегистрироваться</a>
       </div>
       </div>
     </div>
   </section>
-  <footer class="help">
-    <div class="help__wrap">
-      <a href="" class="help__link">Помощь</a>
+  <footer class="footer-help">
+    <div class="footer-help__wrap">
+      <hr>
+      <a href="help.html" class="footer-help__btn">Помощь</a>
     </div>
   </footer>
 </body>

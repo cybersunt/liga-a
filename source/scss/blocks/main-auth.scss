@@ -1,0 +1,51 @@
+.main-auth {
+  margin-bottom: 18px;
+}
+
+.main-auth__wrap {
+  @include wrap;
+  text-align: center;
+}
+
+.main-auth__alarm {
+  @include text(18px, 21px);
+  color: $grey;
+  font-family: 'Gotham Pro Black';
+  font-weight: 400;
+  padding: 14px 21px;
+  box-shadow: 0 17px 46px rgba(29, 100, 166, 0.52);
+  opacity: 0.4;
+
+  span {
+    color: $indianred;
+  }
+}
+
+.main-auth__text {
+  color: $grey;
+
+  &--attention {
+    color: $indianred;
+  }
+}
+
+.main-auth__btn {
+  display: block;
+  color: $indianred;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid $indianred;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    border-style: dashed;
+    cursor: pointer;
+  }
+
+  &:active {
+    border-style: solid;
+    transition: 0.8s;
+    transform: scale(0.8);
+  }
+}

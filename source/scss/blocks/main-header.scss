@@ -1,15 +1,16 @@
 .main-header {
   width: inherit;
-  height: 80px;
-  box-shadow: 0 0 5px #008800;
+  height: 77px;
 }
 
 .main-header__wrap {
   @include wrap;
+  padding-top: 22px;
+  padding-bottom: 16px;
   height: inherit;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .main-header__img {
@@ -22,10 +23,9 @@
   font-family: $ff-bold;
   font-weight: 700;
   text-transform: uppercase;
-  height: 38px;
-  padding-left: 17px;
+  height: 35px;
+  padding-left: 14px;
   border-left: 1px solid $blue;
   display: inline-flex;
   align-items: center;
-  padding-top: 5px;
 }
