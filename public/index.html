@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- SEO Задание тега Title -->
-    <title>Тестовое задание для HTMLACADEMY(Лига) - Главная</title>
+    <title>Тестовое задание для HTMLACADEMY(Лига) - Вход</title>
     <meta name="description" content="Главная страница сервиса incobonus">
     <!-- Задание тега Viewport для адаптивного отображения страницы -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -16,6 +16,74 @@
     </script>
     <script src="js/picturefill.js" async></script>
 <body>
-  <h1>Привет!</h1>
+  <header class="main-header">
+    <div class="main-header__wrap">
+      <picture class="main-header__logo">
+        <source type="image/webp" srcset="img/incobonus@1x.webp 1x, img/incobonus@2x.webp 2x">
+        <img class="product__img" src="img/incobonus@1x.png" srcset="img/incobonus@2x.png 2x" alt="Incobonus">
+      </picture>
+      <span class="main-header__heading">Вход</span>
+    </div>
+  </header>
+  <section class="main-auth">
+    <h1 class="visually-hidde">Авторизация на сайте</h1>
+    <div class="main-auth__wrap">
+      <b class="main-auth__alarm">Авторизируйтесь, чтобы получить <span>кэшбэк до 26%</span></b>
+      <div class="main-auth__social">
+      <p class="main-auth__text">Выберете соц. сеть для входа</p>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="VK">
+            <picture>
+              <source type="image/webp" srcset="img/vk.webp 1x">
+              <img class="social__icon" src="img/vk.png" alt="VK">
+            </picture>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Facebook">
+            <picture>
+              <source type="image/webp" srcset="img/facebook.webp 1x">
+              <img class="social__icon" src="img/facebook.png" alt="Facebook">
+            </picture>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Google">
+            <picture>
+              <source type="image/webp" srcset="img/google.webp 1x">
+              <img class="social__icon" src="img/google.png" alt="Google">
+            </picture>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Одноклассники">
+            <picture>
+              <source type="image/webp" srcset="img/ok.webp 1x">
+              <img class="social__icon" src="img/ok.png" alt="VK">
+            </picture>
+          </a>
+        </li>
+      </ul>
+      <p class="main-auth__text main-auth__text-lines">или</p>
+      <p class="main-auth__text">или используйте e-mail и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="login-input" type="email" name="login" id="login" placeholder="Ваш E-mail">
+        <label class="login-label" for="login">Ваш E-mail</label>
+        <input class="login-password" type="password" name="password" id="password" placeholder="Ваш логин">
+        <label class="login-label" for="password">Пароль</label>
+        <div class="login__text">Восстановить пароль</div>
+        <button class="login__btn" type="submit">Войти</button>
+      </form>
+      <div class="main-auth__text main-auth__text--attention">Нет аккаунта?
+        <a class="main-auth__link" href="register.html">Зарегистрироваться</a>
+      </div>
+      </div>
+    </div>
+  </section>
+  <footer class="help">
+    <h2 class="visually-hidden">Помощь</h2>
+    <a href="" class="help__link">Помощь</a>
+  </footer>
 </body>
 </html>

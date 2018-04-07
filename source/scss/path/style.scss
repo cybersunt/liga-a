@@ -3,3 +3,9 @@
 @import '../base/mixins.scss';
 @import '../base/global.scss';
 @import '../base/fonts.scss';
+
+.main-header {
+  width: inherit;
+  height: 80px;
+  box-shadow: 0 0 5px #008800;
+}

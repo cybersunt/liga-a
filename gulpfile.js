@@ -52,23 +52,23 @@ gulp.task('html', () => {
 
 // images for content
 gulp.task('images', () => {
-  gulp.src('./source/img/content/**/*.{png,jpg,jpeg,svg}')
+  gulp.src('./source/img/**/*.{png,jpg,jpeg,svg}')
     .pipe(gp.plumber())
     .pipe(gp.imagemin([
       gp.imagemin.jpegtran({progressive: true}),
       gp.imagemin.optipng({optimizationLevel: 3}),
       gp.imagemin.svgo()
     ]))
-    .pipe(gulp.dest('./public/img/content'))
+    .pipe(gulp.dest('./public/img/'))
     .pipe(reload({stream : true}));
 });
 
 // webp
 gulp.task('webp', function () {
-  return gulp.src('./source/img/content/**/*.{png,jpg}')
+  return gulp.src('./source/img/**/*.{png,jpg}')
     .pipe(gp.plumber())
     .pipe(gp.webp({quality: 80}))
-    .pipe(gulp.dest('./public/img/content'))
+    .pipe(gulp.dest('./public/img/'))
     .pipe(reload({stream : true}));
 });
 
@@ -121,6 +121,6 @@ gulp.task('default', [
   'html',
   'scripts',
   'images',
-  // 'webp',
+  'webp',
   'server', 'watch'
   ]);
