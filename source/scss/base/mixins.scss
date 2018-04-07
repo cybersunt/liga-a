@@ -1,3 +1,8 @@
+@mixin wrap {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 @mixin ul-line {
   margin: 0;
   padding: 0;

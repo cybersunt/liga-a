@@ -112,7 +112,7 @@ gulp.task('watch', () => {
   gulp.watch('source/**/*', ['images']);
   gulp.watch('source/**/*', ['scripts']);
   gulp.watch('source/**/*', ['sprite']);
-  // gulp.watch('source/**/*', ['webp']);
+  gulp.watch('source/**/*', ['webp']);
 });
 
 gulp.task('default', [
@@ -123,4 +123,4 @@ gulp.task('default', [
   'images',
   'webp',
   'server', 'watch'
-  ]);
+]);

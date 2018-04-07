@@ -3,9 +3,13 @@
 @import '../base/mixins.scss';
 @import '../base/global.scss';
 @import '../base/fonts.scss';
+@import '../blocks/main-header.scss';
 
-.main-header {
-  width: inherit;
-  height: 80px;
-  box-shadow: 0 0 5px #008800;
+.main-auth__wrap {
+  @include wrap;
+
+}
+
+.help__wrap {
+  @include wrap;
 }

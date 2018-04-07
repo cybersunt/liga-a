@@ -1,0 +1,31 @@
+.main-header {
+  width: inherit;
+  height: 80px;
+  box-shadow: 0 0 5px #008800;
+}
+
+.main-header__wrap {
+  @include wrap;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header__img {
+  display: block;
+  margin-right: 17px;
+}
+
+.main-header__heading {
+  color: $blue;
+  font-family: $ff-bold;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 38px;
+  padding-left: 17px;
+  border-left: 1px solid $blue;
+  display: inline-flex;
+  align-items: center;
+  padding-top: 5px;
+}
