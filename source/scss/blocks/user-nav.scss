@@ -1,0 +1,54 @@
+.user-nav {
+  min-height: 35px;
+  // border-bottom: 2px solid $dodgerblue;
+}
+
+.user-nav__list {
+  @include ul-line;
+  justify-content: space-between;
+  border-bottom: 2px solid $dodgerblue;
+  margin-bottom: 0;
+}
+
+.user-nav__item {
+  min-height: 33px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-nav__link {
+  @include text(12px, 10px);
+  font-family: $ff-bold;
+  color: $dodgerblue;
+  padding: 11.5px 4.5px;
+  background-color: $lavender;
+  border-top-left-radius: 4px;
+  position: relative;
+
+  &--active {
+    background-color: $dodgerblue;
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $dodgerblue;
+    color: $white;
+  }
+
+  &:active {
+    color: $lavender;
+  }
+
+  &::before {
+    content:'';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    border: 6.5px solid transparent;
+    border-top: 6.5px solid $white;
+    border-right: 6.5px solid $white;
+  }
+}

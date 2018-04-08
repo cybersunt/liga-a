@@ -1,0 +1,25 @@
+.inner-header__top {
+  padding-left: 26px;
+  padding-right: 30px;
+  padding-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: flex-end;
+}
+
+.inner-header__wrap {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.inner-header__img {
+  display: block;
+}
+
+.inner-header__btn {
+  @include btn-aсtivate(13px, 7.5px);
+  @include status-btns-zoom;
+  letter-spacing: -0.3px;
+}
