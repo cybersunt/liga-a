@@ -13,6 +13,10 @@
 @import '../blocks/footer-help.scss';
 @import '../blocks/stores.scss';
 
+.search {
+  margin-bottom: 9px;
+}
+
 .search__wrap {
   @include wrap;
   width: 100%;
@@ -61,4 +65,71 @@
   position: absolute;
   top: 6px;
   right: 8px;
+}
+
+.get-link {
+  @include wrap;
+}
+
+.get-link__wrap {
+  width: 258px;
+  border: 1px solid $lightblue;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-right: 9px;
+  padding-left: 8px;
+  padding-bottom: 9px;
+  text-align: center;
+}
+
+.get-link__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.get-link__title {
+  @include text(18px, 30px);
+  font-family: $ff-bold;
+  color: $black;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.get-link__text {
+  @include text(11px, 11px);
+  color: $greycolor;
+  letter-spacing: -0.11px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.get-link__input {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: $lavender;
+  font-family: inherit;
+  color: $dodgerblue;
+  border: 0;
+  width: 160px;
+  height: 38px;
+  border-radius: 5px;
+  margin-right: 4px;
+}
+
+.get-link__btn {
+  @include status-btns-zoom;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 10px;
+  color: $white;
+  background: $dodgerblue;
+  border-radius: 4px;
+  padding: 13.5px 13px;
+  border: 0;
+  transition: 0.8s;
+  cursor: pointer;
+  outline: none;
 }
