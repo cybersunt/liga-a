@@ -15,79 +15,48 @@
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.js" async></script>
-<body>
-  <header class="main-header">
-    <div class="main-header__wrap">
-      <picture class="main-header__logo">
-        <source type="image/webp" srcset="img/incobonus@1x.webp 1x, img/incobonus@2x.webp 2x">
-        <img class="main-header__img" src="img/incobonus@1x.png" srcset="img/incobonus@2x.png 2x" alt="Incobonus">
+<body class="inner-page">
+  <header class="inner-header">
+    <div class="inner-header__wrap">
+      <picture>
+        <source type="image/webp" srcset="img/aliexpress.webp 1x, img/incobonus@2x.webp 2x">
+        <img class="inner-header__img" src="img/aliexpress.jpg" srcset="img/incobonus@2x.png 2x" alt="Incobonus">
       </picture>
-      <span class="main-header__heading">Вход</span>
-    </div>
-  </header>
-  <section class="main-auth">
-    <h1 class="visually-hidden">Авторизация на сайте</h1>
-    <div class="main-auth__wrap">
-      <div class="main-auth__alarm">Авторизируйтесь, чтобы получить <span>кэшбэк до 26%</span></div>
-      <div class="main-auth__social">
-        <p class="main-auth__text">Выберете соц. сеть для входа</p>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="VK">
-              <picture>
-                <source type="image/webp" srcset="img/vk.webp 1x">
-                <img class="social__icon" src="img/vk.png" alt="VK">
-              </picture>
-            </a>
+      <a class="inner-header__btn" href="#">Актвировать кэшбэк</a>
+
+      <table class="score">
+        <tr>
+          <td rowspan="2">
+            <picture>
+              <source type="image/webp" srcset="img/user-photo.webp 1x, img/incobonus@2x.webp 2x">
+              <img class="score__user-avatar" src="img/user-photo.png" srcset="img/incobonus@2x.png 2x" alt="user avatar">
+            </picture>
+          </td>
+        </tr>
+        <tr>
+          <td class="score__text">Доступно к выводу</td>
+          <td class="score__text">Всего зарботано</td>
+        </tr>
+        <tr>
+          <td class="score__balance score__balance--available">504 руб.</td>
+          <td class="score__balance">50444 руб.</td>
+        </tr>
+      </table>
+      <nav class="user-nav">
+        <ul class="user-nav__list">
+          <li class="user-nav__item">
+            <a href="#" class="user-nav__link">Найти магазин</a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Facebook">
-              <picture>
-                <source type="image/webp" srcset="img/facebook.webp 1x">
-                <img class="social__icon" src="img/facebook.png" alt="Facebook">
-              </picture>
-            </a>
+          <li class="user-nav__item">
+            <a href="#" class="user-nav__link">Мои заказы</a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Google">
-              <picture>
-                <source type="image/webp" srcset="img/google.webp 1x">
-                <img class="social__icon" src="img/google.png" alt="Google">
-              </picture>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Одноклассники">
-              <picture>
-                <source type="image/webp" srcset="img/ok.webp 1x">
-                <img class="social__icon" src="img/ok.png" alt="VK">
-              </picture>
-            </a>
+            <li class="user-nav__item">
+            <a href="#" class="user-nav__link">Заработать $</a>
           </li>
         </ul>
-      </div>
-      <div class="main-auth__text main-auth__text--lines">или</div>
-      <p class="main-auth__text">или используйте e-mail и пароль</p>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="login-form__layout">
-          <input class="login-form__input login-form__input--mail" type="email" name="login" id="login" required>
-          <label class="login-form__label" for="login">Ваш E-mail</label>
-        </div>
-        <div class="login-form__layout login-form__layout--pswd">
-          <input class="login-form__input login-form__input--pswd" type="password" name="password" id="password" required>
-          <label class="login-form__label" for="password">Пароль</label>
-        </div>
-        <a class="login-form__text" href="#">
-          <span>Восстановить пароль</span>
-        </a>
-        <button class="login-form__btn" type="submit">Войти</button>
-      </form>
-      <div class="main-auth__text main-auth__text--attention">
-        <span>Нет аккаунта?</span>
-        <a class="main-auth__btn" href="register.html">Зарегистрироваться</a>
-      </div>
-      </div>
-  </section>
+      </nav>
+    </div>
+  </header>
   <footer class="footer-help">
     <div class="footer-help__wrap">
       <hr>
