@@ -1,5 +1,5 @@
 @mixin wrap {
-  padding-left: 30px;
+  padding-left: 29px;
   padding-right: 30px;
 }
 
@@ -50,4 +50,16 @@
   padding: 6.5px 30px;
   border-radius: 4px;
   border: 1px solid $color;
+
+  &:hover,
+  &:focus {
+    border-style: dashed;
+    cursor: pointer;
+  }
+
+  &:active {
+    border-style: solid;
+    transition: 0.8s;
+    transform: scale(0.8);
+  }
 }

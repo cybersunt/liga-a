@@ -1,0 +1,87 @@
+.stores {
+}
+.stores__wrap {
+  @include wrap;
+
+}
+
+.stores__list {
+  list-style: none;
+  marign: 0;
+  padding: 0;
+  width: 258px;
+}
+
+.stores__item {
+  border: 1px solid $lightblue;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-left: 11px;
+  padding-bottom: 11px;
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.stores__store-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+.stores__logo {
+  display: block;
+  margin-right: 10px;
+}
+
+.stores__cashback {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.stores__promocode {
+  width: 80px;
+}
+
+.stores__text {
+  @include text(12px, 11px);
+  color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.stores__stat {
+  @include text(18px, 16px)
+  color: $royalblue;
+  font-family: $ff-bold;
+}
+
+.stores__btn-activate {
+  @include btn-aсtivate(8px, 14px);
+}
+
+.stores__btn-more {
+  @include text(12px, 12px);
+  display: inline-flex;
+  align-self: center;
+  color: $crimson;
+  padding: 8px 22.5px;
+  border-radius: 4px;
+  border: 1px solid $crimson;
+
+  &:hover,
+  &:focus {
+    border-style: dashed;
+    cursor: pointer;
+  }
+
+  &:active {
+    border-style: solid;
+    transition: 0.8s;
+    transform: scale(0.8);
+  }
+}

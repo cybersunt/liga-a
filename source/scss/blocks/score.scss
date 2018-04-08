@@ -11,6 +11,8 @@
   position: relative;
   width: 43px;
   margin-right: 4px;
+  outline: none;
+  cursor: pointer;
 
   &::before {
     content:'';
@@ -112,6 +114,7 @@
   width: 117px;
   position: relative;
   outline: none;
+  cursor: pointer;
 
   &:hover .score__withdraw,
   &:focus .score__withdraw {
