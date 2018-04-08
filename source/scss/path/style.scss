@@ -13,3 +13,52 @@
 @import '../blocks/footer-help.scss';
 @import '../blocks/stores.scss';
 
+.search__wrap {
+  @include wrap;
+  width: 100%;
+}
+
+.search-form {
+  width: 258px;
+  position: relative;
+}
+
+.search-form__input {
+  padding-left: 13px;
+  padding-right: 35px;
+  background-color: $lavender;
+  font-family: inherit;
+  color: $black;
+  border: 0;
+  width: inherit;
+  height: 38px;
+  border-radius: 5px;
+
+  &:focus {
+    font-size: 12px;
+    line-height: 10px;
+  }
+}
+
+.search-form__label {
+  @include text(12px, 10px);
+  color: $dodgerblue;
+  position: absolute;
+  top: 14px;
+  left: 13px;
+}
+
+.search-form__input:focus + .search-form__label {
+  display: none;
+}
+
+
+.search-form__btn {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 6px;
+  right: 8px;
+}

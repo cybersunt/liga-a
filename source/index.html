@@ -68,7 +68,21 @@
       </nav>
     </div>
   </header>
-  <main class="inner-page__content">
+
+    <main class="inner-page__content">
+    <section class="search">
+      <div class="search__wrap">
+        <h2 class="visually-hidden">Поиск по магазина</h2>
+        <form class="search-form" action="/search" method="get">
+          <input class="search-form__input" type="text" name="search" id="search" required>
+          <label class="search-form__label" for="search">Найти магазин</label>
+          <button class="search-form__btn" type="submit" aria-label="Найти магазин">
+          <img src="img/loupe.png" alt="Лупа" width="24" height="24">
+        </button>
+      </form>
+      </div>
+    </section>
+
     <section class="stores">
       <div class="stores__wrap">
         <h2 class="visually-hidden">Списрк магазинов с кэшбэком</h2>
@@ -136,7 +150,9 @@
         </ul>
       </div>
     </section>
+
   </main>
+
   <footer class="footer-help">
     <div class="footer-help__wrap">
       <hr>
