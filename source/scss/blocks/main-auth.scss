@@ -1,10 +1,7 @@
 .main-auth {
-  margin-bottom: 18px;
-}
-
-.main-auth__wrap {
   @include wrap;
   text-align: center;
+  margin-bottom: 18px;
 }
 
 .main-auth__alarm {
@@ -26,7 +23,7 @@
     top: 0;
     left: 0;
     width: 280px;
-    height: 70px;
+    height: 100%;
     position: absolute;
     box-shadow: 0 17px 46px rgba(29, 100, 166, 0.52);
     opacity: 0.4;

@@ -1,9 +1,4 @@
 .main-header {
-  width: inherit;
-  height: 77px;
-}
-
-.main-header__wrap {
   @include wrap;
   padding-top: 22px;
   padding-bottom: 16px;
@@ -11,6 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  width: inherit;
+  height: 77px;
 }
 
 .main-header__img {
@@ -20,7 +17,6 @@
 
 .main-header__heading {
   color: $blue;
-  font-family: $ff-bold;
   font-weight: 700;
   text-transform: uppercase;
   height: 35px;

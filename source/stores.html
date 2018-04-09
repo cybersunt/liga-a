@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- SEO Задание тега Title -->
-    <title>Тестовое задание для HTMLACADEMY(Лига) - Вход</title>
+    <title>Тестовое задание для HTMLACADEMY(Лига) - Магазины</title>
     <meta name="description" content="Главная страница сервиса incobonus">
     <!-- Задание тега Viewport для адаптивного отображения страницы -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -17,57 +17,7 @@
     <script src="js/picturefill.js" async></script>
 <body class="inner-page">
 
-  <header class="inner-header">
-    <div class="inner-header__top">
-      <picture>
-        <source type="image/webp" srcset="img/aliexpress.webp">
-        <img class="inner-header__img" src="img/aliexpress.jpg" alt="Incobonus" width="124" height="33">
-      </picture>
-      <a class="inner-header__btn" href="#">Актвировать кэшбэк</a>
-    </div>
-
-    <div class="score">
-      <div class="score__img" tabindex="0">
-        <picture>
-          <source type="image/webp" srcset="img/user-photo.webp">
-          <img class="score__user-avatar" src="img/user-photo.png" alt="user avatar" width="43" height="43">
-        </picture>
-        <div class="score__arrivals-money">
-          <div class="score__earned">
-            <b>+550 руб</b>
-            <span>кэшбэка</span>
-          </div>
-          <p class="score__status">Серебрянный бумеранг</p>
-          <a href="#" class="score__logout-btn">Выйти</a>
-        </div>
-      </div>
-      <div class="score__col score__col--left" tabindex="0">
-        <span class="score__text">Доступно к выводу</span>
-        <span class="score__balance score__balance--available">504 руб.</span>
-        <div class="score__withdraw">
-          <a class="score__btn" href="#">Вывести</a>
-        </div>
-      </div>
-      <div class="score__col score__col--right">
-        <span class="score__text">Всего заработано</span>
-        <span class="score__balance">50444 руб.</span>
-      </div>
-    </div>
-
-    <nav class="user-nav">
-      <ul class="user-nav__list">
-        <li class="user-nav__item">
-          <a href="#" class="user-nav__link user-nav__link--active">Найти магазин</a>
-        </li>
-        <li class="user-nav__item">
-          <a href="#" class="user-nav__link">Мои заказы</a>
-        </li>
-        <li class="user-nav__item">
-          <a href="#" class="user-nav__link">Заработать $</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  @@include('./_include/inner-header.html')
 
   <main class="inner-page__content">
     <section class="search">
@@ -155,10 +105,6 @@
 
   </main>
 
-    <footer class="footer-help">
-    <hr>
-    <a href="help.html" class="footer-help__btn">Помощь</a>
-  </footer>
-
+  @@include('./_include/footer-help.html')
 </body>
 </html>

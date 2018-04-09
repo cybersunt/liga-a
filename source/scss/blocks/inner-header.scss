@@ -1,21 +1,16 @@
 .inner-header {
+  @include wrap;
   margin-bottom: 7px;
 }
 
 .inner-header__top {
-  padding-left: 26px;
-  padding-right: 30px;
   padding-top: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px dotted $crimson;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 10px;
-  align-items: flex-end;
-}
-
-.inner-header__wrap {
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-bottom: 8px;
 }
 
 .inner-header__img {

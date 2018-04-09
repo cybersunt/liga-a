@@ -18,6 +18,7 @@ body {
   font-family: $font-face;
   font-size: 14px;
   line-height: 14px;
+  word-break: break-all;
 }
 
 .visually-hidden {

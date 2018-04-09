@@ -1,11 +1,11 @@
 .user-nav {
   min-height: 35px;
-  // border-bottom: 2px solid $dodgerblue;
 }
 
 .user-nav__list {
   @include ul-line;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   border-bottom: 2px solid $dodgerblue;
   margin-bottom: 0;
 }
@@ -15,11 +15,20 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 2.9px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .user-nav__link {
   @include text(12px, 10px);
-  font-family: $ff-bold;
+  font-weight: 700;
   color: $dodgerblue;
   padding: 11.5px 4.5px;
   background-color: $lavender;

@@ -1,16 +1,13 @@
 .score {
-  border-top: 2px dotted $crimson;
-  padding-top: 9px;
-  width: 100%;
-  height: 54px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .score__img {
   position: relative;
   width: 43px;
-  margin-right: 4px;
+  margin-right: 7px;
   outline: none;
   cursor: pointer;
 
@@ -68,7 +65,7 @@
   margin-bottom: 9px;
 
   b {
-    font-family: $ff-bold;
+    font-weight: 700;
     margin-bottom: 2px;
     display: inline-block;
     vertical-align: middle;
@@ -105,8 +102,7 @@
   padding-bottom: 6px;
 
   &--right {
-    width: 100px;
-    margin-left: auto;
+    width: 107px;
   }
 }
 
@@ -114,6 +110,7 @@
   width: 117px;
   position: relative;
   outline: none;
+  margin-right: 7px;
   cursor: pointer;
 
   &:hover .score__withdraw,
@@ -134,7 +131,7 @@
     height: 25px;
     z-index: 2;
     background-color: $lightgrey;
-    right: -7px;
+    right: -2px;
     top: 7px;
   }
 }
@@ -189,7 +186,7 @@
 
 .score__balance {
   letter-spacing: -0.3px;
-  font-family: $ff-bold;
+  font-weight: 700;
   color: $darkgrey;
   vertical-align: top;
 

@@ -1,6 +1,7 @@
 @mixin wrap {
   padding-left: 29px;
   padding-right: 30px;
+  width: inherit;
 }
 
 @mixin ul-line {
@@ -15,7 +16,6 @@
   font-size: $font-size;
   line-height: $line-height;
 }
-
 
 @mixin status-btns-zoom {
   transition: 0.8s;
@@ -41,6 +41,7 @@
   padding: $indents-v $indents-h;
   display: inline-flex;
   align-self: center;
+  word-break: break-all;
 }
 
 @mixin btn-outline($color) {
