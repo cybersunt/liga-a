@@ -45,6 +45,7 @@
     right: 0;
     bottom: 0;
     width: 10px;
+    border-radius: 4px;
     background-color: $scrolltrack;
 }
 
@@ -53,6 +54,7 @@
     right: 2px;
     width: 7px;
     height: 41px;
+    border-radius: 4px;
     background-color: $dodgerblue;
     box-shadow: 0 17px 46px rgba(29, 100, 166, 0.52);
 }
