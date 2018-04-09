@@ -8,5 +8,5 @@ new SimpleBar(document.getElementById('demo'), {
       scrollbar: 'simplebar-scrollbar',
       track: 'simplebar-track'
     },
-    scrollbarMinSize: 5
+    scrollbarMinSize: 25
 })

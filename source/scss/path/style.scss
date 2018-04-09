@@ -1,6 +1,7 @@
 @import '../base/normalize.scss';
 @import '../base/variables.scss';
 @import '../base/mixins.scss';
+@import '../blocks/inner-page.scss';
 @import '../base/global.scss';
 @import '../base/fonts.scss';
 @import '../blocks/main-header.scss';
@@ -17,15 +18,3 @@
 @import '../blocks/footer-help.scss';
 @import '../library/simple-bar.scss';
 
-
-.inner-page__content {
-  padding-left: 29px;
-  width: 309px;
-  height: calc(100vh - 260px);
-}
-
-.demo {
-  width: 309px;
-  height: calc(100vh - 260px);
-  overflow: hidden;
-}

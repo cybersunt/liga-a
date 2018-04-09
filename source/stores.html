@@ -14,13 +14,12 @@
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.min.js" async></script>
+    <script src="js/picturefill.js" async></script>
     <script src="js/simplebar.js"></script>
 <body class="inner-page">
-
   @@include('./_include/inner-header.html')
 
-  <main class="inner-page__content" id="demo">
+  <main class="inner-page__content" data-simplebar id="demo">
     <section class="search">
       <h2 class="visually-hidden">Поиск по магазина</h2>
       <form class="search-form" action="/search" method="get">
