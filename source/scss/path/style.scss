@@ -13,5 +13,19 @@
 @import '../blocks/get-link.scss';
 @import '../blocks/search.scss';
 @import '../blocks/stores.scss';
+@import '../blocks/selected-store.scss';
 @import '../blocks/footer-help.scss';
+@import '../library/simple-bar.scss';
 
+
+.inner-page__content {
+  padding-left: 29px;
+  width: 309px;
+  height: calc(100vh - 260px);
+}
+
+.demo {
+  width: 309px;
+  height: calc(100vh - 260px);
+  overflow: hidden;
+}

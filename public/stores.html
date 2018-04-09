@@ -14,7 +14,8 @@
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="js/simplebar.js"></script>
 <body class="inner-page">
 
   <header class="inner-header">
@@ -69,7 +70,7 @@
     </nav>
   </header>
 
-  <main class="inner-page__content">
+  <main class="inner-page__content" id="demo">
     <section class="search">
       <h2 class="visually-hidden">Поиск по магазина</h2>
       <form class="search-form" action="/search" method="get">
@@ -83,7 +84,7 @@
 
     <section class="get-link">
       <div class="get-link__wrap">
-        <h1 class="get-link__title">Купить с кэшбэком</h1>
+        <h1 class="get-link__heading">Купить с кэшбэком</h1>
         <p class="get-link__text">Вставьте в поле ниже ссылку на товар чтобы сгененрировать ссылку с кэшбэком</p>
         <form class="get-link__form" action="/search" method="get">
           <input class="get-link__input" type="text" name="get-link" id="get-link" value="https://">
@@ -102,7 +103,7 @@
               <source type="image/webp" srcset="img/ebay.webp">
               <img class="stores__logo" src="img/ebay.jpg" alt="user avatar" width="67" height="28">
             </picture>
-            <div class="stores__cashback">
+            <div class="stores__casheback">
               <span class="stores__text">кэшбэк до</span>
               <span class="stores__stat">6,7%</span>
             </div>
@@ -120,7 +121,7 @@
               <source type="image/webp" srcset="img/ebay.webp">
               <img class="stores__logo" src="img/ebay.jpg" alt="user avatar" width="67" height="28">
             </picture>
-            <div class="stores__cashback">
+            <div class="stores__casheback">
               <span class="stores__text">кэшбэк</span>
               <span class="stores__stat">6,7%</span>
             </div>
@@ -138,7 +139,7 @@
               <source type="image/webp" srcset="img/ebay.webp">
               <img class="stores__logo" src="img/ebay.jpg" alt="user avatar" width="67" height="28">
             </picture>
-            <div class="stores__cashback">
+            <div class="stores__casheback">
               <span class="stores__text">кэшбэк до</span>
               <span class="stores__stat">6,7%</span>
             </div>
@@ -160,5 +161,6 @@
     <a href="help.html" class="footer-help__btn">Помощь</a>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>

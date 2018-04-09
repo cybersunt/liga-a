@@ -1,7 +1,3 @@
-.stores {
-  @include wrap;
-}
-
 .stores__list {
   list-style: none;
   marign: 0;
@@ -35,7 +31,7 @@
   margin-right: 10px;
 }
 
-.stores__cashback {
+.stores__casheback {
   width: 70px;
   margin-right: 10px;
 }

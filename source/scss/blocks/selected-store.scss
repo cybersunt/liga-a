@@ -1,0 +1,40 @@
+.selected-store {
+  padding-top: 5px;
+
+  text-align: center;
+}
+
+.selected-store__find-store {
+  @include text(14px, 14px);
+  display: block;
+  color: $dodgerblue;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.selected-store__store-logo {
+  margin-bottom: 18px;
+}
+
+.selected-store__heading {
+  @include text(24px, 28px);
+  font-family: $ff-black;
+  color: $crimson;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 37px;
+}
+
+.selected-store__try-again,
+.selected-store__activate {
+  @include btn-big-blue;
+  @include status-btns-zoom;
+  display: block;
+  box-shadow: 0 17px 46px rgba(29, 100, 166, 0.52);
+  margin-bottom: 15px;
+}
+
+.selected-store__goto-link {
+  @include btn-outline($dodgerblue);
+  padding: 27px 22px;
+}

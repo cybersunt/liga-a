@@ -15,9 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-pug": "^3.0.4",
     "express": "^4.16.2",
+    "gulp": "^3.9.1",
     "remove-svg-properties": "^0.3.3"
   },
   "devDependencies": {

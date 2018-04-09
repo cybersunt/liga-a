@@ -90,27 +90,9 @@
 }
 
 .login-form__btn {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
-  color: $white;
-  width: 100%;
-  background: $dodgerblue;
-  border-radius: 4px;
-  padding: 26px 20px;
+  @include btn-big-blue;
+  @include status-btns-zoom;
   border: 0;
-  transition: 0.8s;
-
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-
-  &:active {
-    transition: 0.8s;
-    transform: scale(0.8);
-  }
 }
 
 
