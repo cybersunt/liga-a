@@ -55,6 +55,7 @@
 
 .stores__btn-activate {
   @include btn-aсtivate(8px, 14px);
+  @include status-btns-zoom;
 }
 
 .stores__btn-more {
