@@ -115,7 +115,7 @@
 
   &:hover .score__withdraw,
   &:focus .score__withdraw {
-    display: block;
+    display: flex;
     cursor: pointer;
   }
 
@@ -142,7 +142,6 @@
   width: 143px;
   height: 50px;
   padding: 10px 9px;
-  display: flex;
   justify-content: center;
   align-self: center;
   z-index: 3;
@@ -164,15 +163,13 @@
 }
 
 .score__btn {
+  @include status-btns-zoom;
   font-weight: 700;
   color: $white;
   background: $blue;
   border-radius: 4px;
   padding: 8px 25px;
   border: 0;
-  position: absolute;
-  top: calc(50% - 15px);
-  left: calc(50% - 62px);
 }
 
 .score__text {

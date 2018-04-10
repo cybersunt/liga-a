@@ -1,6 +1,8 @@
 const gulp = require('gulp'),
       gp = require('gulp-load-plugins')(),
       fileinclude = require('gulp-file-include'),
+      del = require('del'),
+      run = require('run-sequence'),
 
       rsp = require('remove-svg-properties').stream,
 
@@ -15,7 +17,8 @@ gulp.task('server', function() {
     open: false,
     notify: false,
     server: {
-      baseDir: "./public",
+      baseDir: './public',
+      index: 'login.html'
     }
   });
 });
@@ -38,7 +41,7 @@ gulp.task('sass', () => {
     .pipe(reload({stream : true}))
 });
 
-// pug
+// html
 gulp.task('html', () => {
   gulp.src('./source/*.html')
     .pipe(gp.plumber())
@@ -50,7 +53,7 @@ gulp.task('html', () => {
     .pipe(reload({stream : true}));
 });
 
-// images for content
+// image
 gulp.task('images', () => {
   gulp.src('./source/img/**/*.{png,jpg,jpeg,svg}')
     .pipe(gp.plumber())
@@ -100,9 +103,23 @@ gulp.task('scripts', function () {
 
 gulp.task('fonts', function() {
   return gulp.src('./source/fonts/**', {
-    base: "./source"
+    base: './source'
   })
-  .pipe(gulp.dest("./public"));
+  .pipe(gulp.dest('./public'));
+});
+
+gulp.task('clean', function() {
+  return del('./public');
+});
+
+gulp.task('build', function(done) {
+  run('clean',
+    'fonts',
+    'sass',
+    'images',
+    'scripts',
+    'html',
+    'webp', done);
 });
 
 gulp.task('watch', () => {
